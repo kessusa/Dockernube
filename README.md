@@ -65,9 +65,10 @@ Las credenciales por defecto para la conexión son:
 
 Para la persistencia de la base de datos he creado un contenedor que se llama datos en el host que esta ligado a /etc/lib/mysql de nuestro contenedor mysql.
 
-Para poder entrar en la base de datos y crear la base de de datos de los registros,debemos ejecutar el siguiente comando.
+Para poder entrar en la base de datos y crear otras bases de datos que necesites,puedes usar el siguiente comando.
 
-docker exec -ti bash
+ * docker exec -ti bash
 
-Una vez dentro navegamos por el contenedor y utilizamos el archivo regisgtro.sql para crear la base de datos.
+Una vez dentro navegamos por el contenedor,tenemos el archivo registro.sql que es la estructura de la base de datos para que funcione la app.
+
 
