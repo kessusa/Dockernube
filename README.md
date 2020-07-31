@@ -46,7 +46,7 @@ docker-compose down     # Detener y eliminar el ambiente de desarrollo.
 
 ## Accesos
 
-### Web
+## Web
 
 * http://localhost/
 
@@ -72,14 +72,15 @@ Para poder entrar en la base de datos y crear otras bases de datos que necesites
 Una vez dentro navegamos por el contenedor,tenemos el archivo registro.sql que es la estructura de la base de datos para que funcione la app.
 
 ## WWW
- Nos metemos en este directorio y accedemos al fichero conexion.php,en este debemos cambiar los nosmbres de usuarios,contraseña,base de datos e ip de la máquina Mysql.
+
+ Nos metemos en este directorio y accedemos al fichero conexion.php,en este debemos cambiar los nombres de usuarios,contraseña,base de datos e ip de la máquina Mysql.
  Para poder la ip que tenemos en el contenedor deberemos ejecutar.
  * docker inspect nombre del docker que esta corriendo la base de datos
  Dentro del inspect vamos a network y veremos cual es la ip del contenedor.
  
  ## Almacen
  
-Recuerda que para poder usar corretamente la nube tendras que cambiar el propietario de la carpeta almace que se encuentra dentro de www/.
+Recuerda que para poder usar corretamente la nube tendras que cambiar el propietario de la carpeta almacen que se encuentra dentro de www/.
 Puedes poner de propietario a www-data y de grupo tambien con el siguiente comando.
 * sudo chown www-data:www-data almacen
 
