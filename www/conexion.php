@@ -1,6 +1,6 @@
 <?php
 // Create connection
-$conn = mysqli_connect("172.22.0.2","root","root","nuevos");
+$conn = mysqli_connect("172.18.0.2","root","root","nuevos");
 // Check connection
 if (!$conn) {
     die("Conexión fallida " . mysqli_connect_error());
