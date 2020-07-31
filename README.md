@@ -77,4 +77,12 @@ Una vez dentro navegamos por el contenedor,tenemos el archivo registro.sql que e
  * docker inspect nombre del docker que esta corriendo la base de datos
  Dentro del inspect vamos a network y veremos cual es la ip del contenedor.
  
+ ## Almacen
+ 
+Recuerda que para poder usar corretamente la nube tendras que cambiar el propietario de la carpeta almace que se encuentra dentro de www/.
+Puedes poner de propietario a www-data y de grupo tambien con el siguiente comando.
+* sudo chown www-data:www-data almacen
+Una vez realizado esto podrás crear sin problemas los nuevos usuarios.
+
+
 
